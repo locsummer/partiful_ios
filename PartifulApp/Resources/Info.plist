@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.partiful.invitemaker</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Partiful</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Partiful cần truy cập thư viện ảnh để bạn có thể thêm hình ảnh vào thiệp mời của mình.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Partiful cần quyền lưu thiệp mời tiệc đã thiết kế vào thư viện ảnh của bạn.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Partiful cần quyền sử dụng máy ảnh để chụp ảnh kỷ niệm gắn vào thiệp mời.</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>Partiful cần quyền truy cập Lịch để lên lịch sự kiện tiệc vào Apple Calendar.</string>
+    <key>NSCalendarsFullAccessUsageDescription</key>
+    <string>Partiful cần toàn quyền truy cập Lịch để lưu và quản lý ngày giờ sự kiện bữa tiệc của bạn.</string>
+    <key>NSRemindersUsageDescription</key>
+    <string>Partiful cần quyền truy cập Lời nhắc để thông báo trước giờ tiệc diễn ra.</string>
+    <key>NSRemindersFullAccessUsageDescription</key>
+    <string>Partiful cần toàn quyền truy cập Lời nhắc để tạo lịch thông báo tiệc.</string>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+</dict>
+</plist>
