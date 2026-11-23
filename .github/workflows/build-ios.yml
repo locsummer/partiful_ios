@@ -43,9 +43,8 @@ jobs:
           mkdir -p package/Payload
           cp -r build/Release-iphoneos/PartifulApp.app package/Payload/
           cd package
-          zip -r ../PartifulApp.ipa Payload
-          cd ..
-          cp PartifulApp.ipa ${{ github.workspace }}/PartifulApp.ipa
+          zip -r "${{ github.workspace }}/PartifulApp.ipa" Payload
+          cd "${{ github.workspace }}"
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
