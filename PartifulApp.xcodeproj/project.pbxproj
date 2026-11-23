@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22000000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000000000001 /* ContentView.swift */; };
+		22000000000100000001 /* PartifulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000100000001 /* PartifulApp.swift */; };
+		22000000000200000001 /* CanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000200000001 /* CanvasRenderer.swift */; };
+		22000000000300000001 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000300000001 /* HistoryManager.swift */; };
+		22000000000400000001 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000400000001 /* ColorPalette.swift */; };
+		22000000000500000001 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000500000001 /* GlassCard.swift */; };
+		22000000000600000001 /* NeonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000600000001 /* NeonButton.swift */; };
+		22000000000700000001 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000700000001 /* Typography.swift */; };
+		22000000000800000001 /* EventFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000800000001 /* EventFormView.swift */; };
+		22000000000900000001 /* CardEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000900000001 /* CardEditorView.swift */; };
+		22000000000A00000001 /* CardEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000A00000001 /* CardEditorViewModel.swift */; };
+		22000000000B00000001 /* BottomToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000B00000001 /* BottomToolbarView.swift */; };
+		22000000000C00000001 /* FilterAdjustmentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000C00000001 /* FilterAdjustmentSheet.swift */; };
+		22000000000D00000001 /* LayerManagementSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000D00000001 /* LayerManagementSheet.swift */; };
+		22000000000E00000001 /* StickerPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000E00000001 /* StickerPickerSheet.swift */; };
+		22000000000F00000001 /* TextEditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000000F00000001 /* TextEditorSheet.swift */; };
+		22000000001000000001 /* ExportOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001000000001 /* ExportOptionsView.swift */; };
+		22000000001100000001 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001100000001 /* HomeScreenView.swift */; };
+		22000000001200000001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001200000001 /* OnboardingView.swift */; };
+		22000000001300000001 /* CardPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001300000001 /* CardPreviewView.swift */; };
+		22000000001400000001 /* SavedProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001400000001 /* SavedProjectsView.swift */; };
+		22000000001500000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001500000001 /* SettingsView.swift */; };
+		22000000001600000001 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001600000001 /* SplashScreenView.swift */; };
+		22000000001700000001 /* TemplateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001700000001 /* TemplateDetailView.swift */; };
+		22000000001800000001 /* CanvasLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001800000001 /* CanvasLayer.swift */; };
+		22000000001900000001 /* CardDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001900000001 /* CardDesign.swift */; };
+		22000000001A00000001 /* LayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001A00000001 /* LayerType.swift */; };
+		22000000001B00000001 /* PartyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001B00000001 /* PartyEvent.swift */; };
+		22000000001C00000001 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001C00000001 /* Template.swift */; };
+		22000000001D00000001 /* TemplateCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001D00000001 /* TemplateCategory.swift */; };
+		22000000001E00000001 /* TemplateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001E00000001 /* TemplateRepository.swift */; };
+		22000000001F00000001 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000001F00000001 /* CalendarService.swift */; };
+		22000000002000000001 /* DraftStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000002000000001 /* DraftStorageService.swift */; };
+		22000000002100000001 /* ImageProcessorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000002100000001 /* ImageProcessorService.swift */; };
+		22000000002200000001 /* PDFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11000000002200000001 /* PDFExportService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11000000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/ContentView.swift"; sourceTree = "<group>"; };
+		11000000000100000001 /* PartifulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/PartifulApp.swift"; sourceTree = "<group>"; };
+		11000000000200000001 /* CanvasRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/CanvasEngine/CanvasRenderer.swift"; sourceTree = "<group>"; };
+		11000000000300000001 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/CanvasEngine/HistoryManager.swift"; sourceTree = "<group>"; };
+		11000000000400000001 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/DesignSystem/ColorPalette.swift"; sourceTree = "<group>"; };
+		11000000000500000001 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/DesignSystem/Components/GlassCard.swift"; sourceTree = "<group>"; };
+		11000000000600000001 /* NeonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/DesignSystem/Components/NeonButton.swift"; sourceTree = "<group>"; };
+		11000000000700000001 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/DesignSystem/Typography.swift"; sourceTree = "<group>"; };
+		11000000000800000001 /* EventFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Calendar/EventFormView.swift"; sourceTree = "<group>"; };
+		11000000000900000001 /* CardEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/CardEditorView.swift"; sourceTree = "<group>"; };
+		11000000000A00000001 /* CardEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/CardEditorViewModel.swift"; sourceTree = "<group>"; };
+		11000000000B00000001 /* BottomToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/Components/BottomToolbarView.swift"; sourceTree = "<group>"; };
+		11000000000C00000001 /* FilterAdjustmentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/Components/FilterAdjustmentSheet.swift"; sourceTree = "<group>"; };
+		11000000000D00000001 /* LayerManagementSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/Components/LayerManagementSheet.swift"; sourceTree = "<group>"; };
+		11000000000E00000001 /* StickerPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/Components/StickerPickerSheet.swift"; sourceTree = "<group>"; };
+		11000000000F00000001 /* TextEditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Editor/Components/TextEditorSheet.swift"; sourceTree = "<group>"; };
+		11000000001000000001 /* ExportOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Export/ExportOptionsView.swift"; sourceTree = "<group>"; };
+		11000000001100000001 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Home/HomeScreenView.swift"; sourceTree = "<group>"; };
+		11000000001200000001 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Onboarding/OnboardingView.swift"; sourceTree = "<group>"; };
+		11000000001300000001 /* CardPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Preview/CardPreviewView.swift"; sourceTree = "<group>"; };
+		11000000001400000001 /* SavedProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Projects/SavedProjectsView.swift"; sourceTree = "<group>"; };
+		11000000001500000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Settings/SettingsView.swift"; sourceTree = "<group>"; };
+		11000000001600000001 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Splash/SplashScreenView.swift"; sourceTree = "<group>"; };
+		11000000001700000001 /* TemplateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Templates/TemplateDetailView.swift"; sourceTree = "<group>"; };
+		11000000001800000001 /* CanvasLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/CanvasLayer.swift"; sourceTree = "<group>"; };
+		11000000001900000001 /* CardDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/CardDesign.swift"; sourceTree = "<group>"; };
+		11000000001A00000001 /* LayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/LayerType.swift"; sourceTree = "<group>"; };
+		11000000001B00000001 /* PartyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/PartyEvent.swift"; sourceTree = "<group>"; };
+		11000000001C00000001 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Template.swift"; sourceTree = "<group>"; };
+		11000000001D00000001 /* TemplateCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/TemplateCategory.swift"; sourceTree = "<group>"; };
+		11000000001E00000001 /* TemplateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories/TemplateRepository.swift"; sourceTree = "<group>"; };
+		11000000001F00000001 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/CalendarService.swift"; sourceTree = "<group>"; };
+		11000000002000000001 /* DraftStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/DraftStorageService.swift"; sourceTree = "<group>"; };
+		11000000002100000001 /* ImageProcessorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/ImageProcessorService.swift"; sourceTree = "<group>"; };
+		11000000002200000001 /* PDFExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/PDFExportService.swift"; sourceTree = "<group>"; };
+		1100FFFF00000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Resources/Info.plist"; sourceTree = "<group>"; };
+		1100000000000002 /* PartifulApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartifulApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A00000700000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A00000300000001 = {
+			isa = PBXGroup;
+			children = (
+				1A00000400000001 /* PartifulApp */,
+				1A00000500000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A00000500000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1100000000000002 /* PartifulApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A00000400000001 /* PartifulApp */ = {
+			isa = PBXGroup;
+			children = (
+				11000000000000000001 /* ContentView.swift */,
+				11000000000100000001 /* PartifulApp.swift */,
+				11000000000200000001 /* CanvasRenderer.swift */,
+				11000000000300000001 /* HistoryManager.swift */,
+				11000000000400000001 /* ColorPalette.swift */,
+				11000000000500000001 /* GlassCard.swift */,
+				11000000000600000001 /* NeonButton.swift */,
+				11000000000700000001 /* Typography.swift */,
+				11000000000800000001 /* EventFormView.swift */,
+				11000000000900000001 /* CardEditorView.swift */,
+				11000000000A00000001 /* CardEditorViewModel.swift */,
+				11000000000B00000001 /* BottomToolbarView.swift */,
+				11000000000C00000001 /* FilterAdjustmentSheet.swift */,
+				11000000000D00000001 /* LayerManagementSheet.swift */,
+				11000000000E00000001 /* StickerPickerSheet.swift */,
+				11000000000F00000001 /* TextEditorSheet.swift */,
+				11000000001000000001 /* ExportOptionsView.swift */,
+				11000000001100000001 /* HomeScreenView.swift */,
+				11000000001200000001 /* OnboardingView.swift */,
+				11000000001300000001 /* CardPreviewView.swift */,
+				11000000001400000001 /* SavedProjectsView.swift */,
+				11000000001500000001 /* SettingsView.swift */,
+				11000000001600000001 /* SplashScreenView.swift */,
+				11000000001700000001 /* TemplateDetailView.swift */,
+				11000000001800000001 /* CanvasLayer.swift */,
+				11000000001900000001 /* CardDesign.swift */,
+				11000000001A00000001 /* LayerType.swift */,
+				11000000001B00000001 /* PartyEvent.swift */,
+				11000000001C00000001 /* Template.swift */,
+				11000000001D00000001 /* TemplateCategory.swift */,
+				11000000001E00000001 /* TemplateRepository.swift */,
+				11000000001F00000001 /* CalendarService.swift */,
+				11000000002000000001 /* DraftStorageService.swift */,
+				11000000002100000001 /* ImageProcessorService.swift */,
+				11000000002200000001 /* PDFExportService.swift */,
+				1100FFFF00000001 /* Info.plist */,
+			);
+			path = PartifulApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A00000200000001 /* PartifulApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A00000A00000001 /* Build configuration list for PBXNativeTarget "PartifulApp" */;
+			buildPhases = (
+				1A00000600000001 /* Sources */,
+				1A00000700000001 /* Frameworks */,
+				1A00000800000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PartifulApp;
+			productName = PartifulApp;
+			productReference = 1100000000000002 /* PartifulApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A00000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1A00000200000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1A00000900000001 /* Build configuration list for PBXProject "PartifulApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A00000300000001;
+			productRefGroup = 1A00000500000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A00000200000001 /* PartifulApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A00000800000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A00000600000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22000000000000000001 /* ContentView.swift in Sources */,
+				22000000000100000001 /* PartifulApp.swift in Sources */,
+				22000000000200000001 /* CanvasRenderer.swift in Sources */,
+				22000000000300000001 /* HistoryManager.swift in Sources */,
+				22000000000400000001 /* ColorPalette.swift in Sources */,
+				22000000000500000001 /* GlassCard.swift in Sources */,
+				22000000000600000001 /* NeonButton.swift in Sources */,
+				22000000000700000001 /* Typography.swift in Sources */,
+				22000000000800000001 /* EventFormView.swift in Sources */,
+				22000000000900000001 /* CardEditorView.swift in Sources */,
+				22000000000A00000001 /* CardEditorViewModel.swift in Sources */,
+				22000000000B00000001 /* BottomToolbarView.swift in Sources */,
+				22000000000C00000001 /* FilterAdjustmentSheet.swift in Sources */,
+				22000000000D00000001 /* LayerManagementSheet.swift in Sources */,
+				22000000000E00000001 /* StickerPickerSheet.swift in Sources */,
+				22000000000F00000001 /* TextEditorSheet.swift in Sources */,
+				22000000001000000001 /* ExportOptionsView.swift in Sources */,
+				22000000001100000001 /* HomeScreenView.swift in Sources */,
+				22000000001200000001 /* OnboardingView.swift in Sources */,
+				22000000001300000001 /* CardPreviewView.swift in Sources */,
+				22000000001400000001 /* SavedProjectsView.swift in Sources */,
+				22000000001500000001 /* SettingsView.swift in Sources */,
+				22000000001600000001 /* SplashScreenView.swift in Sources */,
+				22000000001700000001 /* TemplateDetailView.swift in Sources */,
+				22000000001800000001 /* CanvasLayer.swift in Sources */,
+				22000000001900000001 /* CardDesign.swift in Sources */,
+				22000000001A00000001 /* LayerType.swift in Sources */,
+				22000000001B00000001 /* PartyEvent.swift in Sources */,
+				22000000001C00000001 /* Template.swift in Sources */,
+				22000000001D00000001 /* TemplateCategory.swift in Sources */,
+				22000000001E00000001 /* TemplateRepository.swift in Sources */,
+				22000000001F00000001 /* CalendarService.swift in Sources */,
+				22000000002000000001 /* DraftStorageService.swift in Sources */,
+				22000000002100000001 /* ImageProcessorService.swift in Sources */,
+				22000000002200000001 /* PDFExportService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A00000B00000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A00000C00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A00000D00000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PartifulApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.partiful.invitemaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A00000E00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PartifulApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.partiful.invitemaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A00000900000001 /* Build configuration list for PBXProject "PartifulApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A00000B00000001 /* Debug */,
+				1A00000C00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A00000A00000001 /* Build configuration list for PBXNativeTarget "PartifulApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A00000D00000001 /* Debug */,
+				1A00000E00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 1A00000100000001 /* Project object */;
+}

@@ -1,0 +1,79 @@
+name: Build iOS IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build Partiful iOS IPA
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Version
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+
+      - name: Locate Xcode Project
+        id: locate
+        run: |
+          if [ -d "PartifulApp.xcodeproj" ]; then
+            echo "project_dir=." >> $GITHUB_OUTPUT
+          elif [ -d "ios/PartifulApp.xcodeproj" ]; then
+            echo "project_dir=ios" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build Partiful App
+        run: |
+          cd ${{ steps.locate.outputs.project_dir }}
+          xcodebuild clean build \
+            -project PartifulApp.xcodeproj \
+            -scheme PartifulApp \
+            -destination "generic/platform=iOS" \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            BUILD_DIR="build"
+
+      - name: Package to IPA
+        run: |
+          cd ${{ steps.locate.outputs.project_dir }}
+          mkdir -p package/Payload
+          cp -r build/Release-iphoneos/PartifulApp.app package/Payload/
+          cd package
+          zip -r ../PartifulApp.ipa Payload
+          cd ..
+          cp PartifulApp.ipa ${{ github.workspace }}/PartifulApp.ipa
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PartifulApp-iOS-IPA
+          path: PartifulApp.ipa
+          retention-days: 14
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/heads/main')
+        with:
+          tag_name: v1.0.0-ios
+          name: Partiful iOS v1.0.0 (Sideloadly / iTunes IPA)
+          body: |
+            ## Partiful Party Invite Maker - iOS IPA Release
+            
+            This IPA is ready to be sideloaded with **Sideloadly** or **AltStore** using your Apple ID:
+            1. Download `PartifulApp.ipa` below.
+            2. Open **Sideloadly** on Windows.
+            3. Connect your iPhone via USB (make sure iTunes / Apple Mobile Device Support recognizes it).
+            4. Drag & drop `PartifulApp.ipa` into Sideloadly.
+            5. Enter your Apple ID and click **Start**!
+          files: PartifulApp.ipa
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
