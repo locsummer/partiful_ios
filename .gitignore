@@ -1,0 +1,8 @@
+# iOS .gitignore
+.DS_Store
+.build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+DerivedData/
+*.ipa

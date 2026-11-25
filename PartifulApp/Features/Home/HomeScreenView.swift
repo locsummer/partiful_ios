@@ -125,31 +125,36 @@ public struct HomeScreenView: View {
     
     // MARK: - Quick Create Cards
     private var quickCreateSection: some View {
-        HStack(spacing: 14) {
+        HStack(spacing: 12) {
             // Create Blank
             Button(action: {
                 openEditorWithDesign = CardDesign(title: "Thiết kế mới")
             }) {
-                HStack(spacing: 12) {
+                HStack(spacing: 10) {
                     ZStack {
                         Circle()
                             .fill(AppTheme.neonPurple.opacity(0.3))
-                            .frame(width: 44, height: 44)
+                            .frame(width: 40, height: 40)
                         Image(systemName: "plus")
-                            .font(.system(size: 18, weight: .bold))
+                            .font(.system(size: 16, weight: .bold))
                             .foregroundColor(AppTheme.brightViolet)
                     }
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("Tạo thiệp mới")
-                            .font(AppTypography.bodyBold)
+                        Text("Tạo mới")
+                            .font(.system(size: 15, weight: .bold))
                             .foregroundColor(.white)
-                        Text("Thiết kế tự do")
-                            .font(AppTypography.caption)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.85)
+                        Text("Bản trống")
+                            .font(.system(size: 12))
                             .foregroundColor(AppTheme.textSecondary)
+                            .lineLimit(1)
                     }
-                    Spacer()
+                    Spacer(minLength: 0)
                 }
-                .padding(14)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 14)
+                .frame(maxWidth: .infinity)
                 .background(AppTheme.surfaceElevated)
                 .cornerRadius(18)
                 .overlay {
@@ -160,26 +165,31 @@ public struct HomeScreenView: View {
             
             // Create from Photo
             PhotosPicker(selection: $selectedPhotoItem, matching: .images) {
-                HStack(spacing: 12) {
+                HStack(spacing: 10) {
                     ZStack {
                         Circle()
                             .fill(AppTheme.hotPink.opacity(0.3))
-                            .frame(width: 44, height: 44)
+                            .frame(width: 40, height: 40)
                         Image(systemName: "photo.fill")
-                            .font(.system(size: 18, weight: .bold))
+                            .font(.system(size: 16, weight: .bold))
                             .foregroundColor(AppTheme.hotPink)
                     }
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("Từ ảnh cá nhân")
-                            .font(AppTypography.bodyBold)
+                        Text("Từ ảnh")
+                            .font(.system(size: 15, weight: .bold))
                             .foregroundColor(.white)
-                        Text("Chọn từ thư viện")
-                            .font(AppTypography.caption)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.85)
+                        Text("Thư viện")
+                            .font(.system(size: 12))
                             .foregroundColor(AppTheme.textSecondary)
+                            .lineLimit(1)
                     }
-                    Spacer()
+                    Spacer(minLength: 0)
                 }
-                .padding(14)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 14)
+                .frame(maxWidth: .infinity)
                 .background(AppTheme.surfaceElevated)
                 .cornerRadius(18)
                 .overlay {
